@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import Container from "../../components/Container";
 
-export default function Apresentation() {
+export default function Header() {
     const t = useTranslations('Home');
 
     return (
@@ -12,12 +12,12 @@ export default function Apresentation() {
                         <div className="flex flex-row">
                             <img src="./so-so-icon.png" alt="so-so-icon" className="w-20 h-20" />
                             <div className="flex gap-3 flex-col">
-                                <h1 className="text-5xl font-bold text-primary">{t('apresentation.title')}</h1>
-                                <p className="text-xl text-quaternary font-bold">{t('apresentation.subtitle')}</p>
+                                <h1 className="text-5xl font-bold text-primary">{t('header.title')}</h1>
+                                <p className="text-xl text-quaternary font-bold">{t('header.subtitle')}</p>
                             </div>
                         </div>
                         <div className="max-w-4xl">
-                            <p className="text-lg text-primary">{t('apresentation.description')}</p>
+                            <p className="text-lg text-primary">{t('header.description')}</p>
                         </div>
 
                         <div className="flex flex-row items-center gap-3">

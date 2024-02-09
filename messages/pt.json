@@ -5,7 +5,7 @@
             "about": "Sobre",
             "contact": "Contato"
         },
-        "apresentation": {
+        "header": {
             "title": "Olá, eu sou o Pedro Vitor!",
             "subtitle": "Desenvolvedor Full Stack",
             "description": "Sou um desenvolvedor full stack apaixonado por criar sites bonitos e funcionais. Tenho uma sólida experiência em desenvolvimento web e estou sempre em busca de novos desafios e oportunidades para crescer e aprimorar minhas habilidades.",

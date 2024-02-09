@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl';
 import Navbar from './components/Navbar';
-import Apresentation from './sections/Apresentation';
-import Skills from './sections/Skills';
+import Body from './modules/Body';
+import Header from './modules/Header';
 
 export default function Home() {
   const t = useTranslations('Home');
@@ -13,8 +13,8 @@ export default function Home() {
         options={navOptions}
         customStyles='py-10'
       />
-      <Apresentation />
-      <Skills />
+      <Header />
+      <Body />
     </div>
   );
 }
