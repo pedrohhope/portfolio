@@ -1,11 +1,13 @@
+import { useProjects } from "@/app/[locale]/hooks/useProjects";
 import { useTranslations } from "next-intl";
 import ProjectContainer from "./components/ProjectContainer";
-import getProjects from "./projects";
 
 
 export default function ProjectsFragment() {
     const t = useTranslations("Home.projects")
-    const projects = getProjects();
+    const [
+        projects,
+    ] = useProjects();
     return (
         <div id="projects">
             <h1 className="text-3xl mb-5"><span className="text-tertiary mr-4">#</span>{t('title')}</h1>

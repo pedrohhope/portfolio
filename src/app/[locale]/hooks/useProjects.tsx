@@ -1,7 +1,16 @@
 import { useTranslations } from "next-intl";
 
 
-const getProjects = () => {
+export const useProjects = (): [
+    {
+        id: number;
+        name: string;
+        description: string;
+        image: string;
+        technologies: string[];
+        link: string;
+    }[]
+] => {
     const t = useTranslations('Home.projects.projects_list')
 
     const projects = [
@@ -44,7 +53,8 @@ const getProjects = () => {
 
     ]
 
-    return projects;
-}
 
-export default getProjects;
+    return [
+        projects
+    ];
+}

@@ -1,13 +1,16 @@
+import useSkills from "@/app/[locale]/hooks/useSkills";
 import { useTranslations } from "next-intl";
 import SkillCard from "./components/SkillCard";
-import getSkills from "./skills";
 
 
 
 export default function SkillsFragment() {
     const t = useTranslations('Home.skills');
 
-    const skills = getSkills();
+    const [
+        skills,
+    ] = useSkills();
+
     return (
         <div className="mb-48" id="skills">
             <h1 className="text-3xl mb-5"><span className="text-tertiary mr-4">#</span>{t('title')}</h1>

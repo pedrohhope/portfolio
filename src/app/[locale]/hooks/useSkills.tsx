@@ -1,6 +1,13 @@
 import { useTranslations } from "next-intl";
 
-const getSkills = () => {
+
+const useSkills = (): [
+    {
+        name: string;
+        icon: string;
+        category: string;
+    }[]
+] => {
     const t = useTranslations('Home.skills');
     const skills = [
         {
@@ -60,10 +67,10 @@ const getSkills = () => {
         }
     ]
 
-    return skills;
+    return [
+        skills
+    ]
 }
 
 
-
-
-export default getSkills;
+export default useSkills;
