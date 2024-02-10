@@ -1,10 +1,16 @@
 'use client';
 import { usePathname, useRouter } from "next/navigation";
 import { PropsWithChildren } from "react";
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Container from "./Container";
 
+export interface IOption {
+    name: string;
+    anchor: string;
+}
+
 interface NavbarProps {
-    options: string[];
+    options: IOption[];
     customStyles?: string;
 }
 
@@ -23,14 +29,19 @@ export default function Navbar({ options, customStyles = '' }: PropsWithChildren
             <div className={`flex justify-between items-center ${customStyles}`}>
                 <ul className='flex space-x-10'>
                     {options.map((option, index) => (
-                        <li key={index} className='text-primary 
+                        <AnchorLink
+                            alt={option.name}
+                            href={option.anchor}
+                            key={index}
+                            offset={100}
+                            className='text-primary
                         transition 
                         duration-150 
                         ease-out 
                         hover:text-quaternary 
                         cursor-pointer'>
-                            # {option}
-                        </li>
+                            # {option.name}
+                        </AnchorLink>
                     ))}
                 </ul>
 

@@ -1,14 +1,40 @@
 {
     "Home": {
         "nav_options": {
-            "home": "Home",
-            "about": "About",
-            "contact": "Contact"
+            "skills": "Skills",
+            "projects": "Projects"
         },
         "header": {
             "title": "Hi, I'm Pedro Vitor",
             "subtitle": "Full-stack developer",
-            "description": "I'm a full stack developer with a passion for creating beautiful and functional websites. I have a strong background in web development and I'm always looking for new challenges and opportunities to grow and improve my skills."
+            "description": "I'm a full stack developer with a passion for creating beautiful and functional websites. I have a strong background in web development and I'm always looking for new challenges and opportunities to grow and improve my skills.",
+            "button": "Contact me",
+            "or": "or"
+        },
+        "skills": {
+            "title": "Skills",
+            "frontend_and_backend": "Frontend & Backend",
+            "frontend": "Frontend - Frameworks & Libraries",
+            "backend_only": "Backend",
+            "backend": "Backend - Frameworks & Libraries",
+            "databases": "Database",
+            "devops": "DevOps",
+            "git": "Git & Version Control"
+        },
+        "projects": {
+            "title": "Projects",
+            "projects_list": {
+                "project_1": {
+                    "title": "Ultranimes",
+                    "description": "During my experience at BuuhVProjects, I developed the website and application to promote Ultranimes, an events app. I created the frontend and participated in the backend development, ensuring robust functionalities and attractive interfaces. The successful launch reflected months of hard work and passion for software development, generating a positive response from users. I take valuable learnings to future challenges."
+                },
+                "project_2": {
+                    "title": "Solar System - Freelancer",
+                    "description": "This was my first website working as a freelance developer. The client wanted a website to promote the solar energy company, Solar System."
+                },
+                "show_project": "Show project"
+            },
+            "more_projects": "More projects in my"
         }
     }
 }

@@ -1,11 +1,21 @@
 import { useTranslations } from 'next-intl';
-import Navbar from './components/Navbar';
+import Navbar, { IOption } from './components/Navbar';
 import Body from './modules/Body';
+import Footer from './modules/Footer';
 import Header from './modules/Header';
 
 export default function Home() {
   const t = useTranslations('Home');
-  const navOptions = [t('nav_options.home'), t('nav_options.about'), t('nav_options.contact')];
+  const navOptions: IOption[] = [
+    {
+      name: t('nav_options.skills'),
+      anchor: '#skills'
+    },
+    {
+      name: t('nav_options.projects'),
+      anchor: '#projects'
+    }
+  ];
 
   return (
     <div className='bg-background min-h-screen'>
@@ -15,6 +25,7 @@ export default function Home() {
       />
       <Header />
       <Body />
+      <Footer />
     </div>
   );
 }

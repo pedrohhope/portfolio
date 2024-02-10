@@ -1,15 +1,40 @@
 {
     "Home": {
         "nav_options": {
-            "home": "Início",
-            "about": "Sobre",
-            "contact": "Contato"
+            "skills": "Habilidades",
+            "projects": "Projetos"
         },
         "header": {
             "title": "Olá, eu sou o Pedro Vitor!",
             "subtitle": "Desenvolvedor Full Stack",
             "description": "Sou um desenvolvedor full stack apaixonado por criar sites bonitos e funcionais. Tenho uma sólida experiência em desenvolvimento web e estou sempre em busca de novos desafios e oportunidades para crescer e aprimorar minhas habilidades.",
-            "button": "Entre em contato"
+            "button": "Entre em contato",
+            "or": "ou"
+        },
+        "skills": {
+            "title": "Habilidades",
+            "frontend_and_backend": "Desenvolvimento Frontend e Backend",
+            "frontend": "Frontend - Frameworks e Bibliotecas",
+            "backend_only": "Backend",
+            "backend": "Backend - Frameworks e Bibliotecas",
+            "databases": "Bancos de Dados",
+            "devops": "DevOps - Ferramentas e Serviços",
+            "git": "Git - Controle de Versão"
+        },
+        "projects": {
+            "title": "Projetos",
+            "projects_list": {
+                "project_1": {
+                    "title": "Ultranimes",
+                    "description": "Durante minha experiência na empresa BuuhVProjects, desenvolvi o site e aplicativo para promover o Ultranimes, um app de eventos. criei o frontend e participei do desenvolvimento backend, garantindo funcionalidades robustas e interfaces atrativas. O sucesso do lançamento refletiu meses de trabalho árduo e paixão pelo desenvolvimento de software, gerando uma resposta positiva dos usuários. Levo valiosos aprendizados para desafios futuros."
+                },
+                "project_2": {
+                    "title": "Solar System - Freelancer",
+                    "description": "Esse foi o meu primeiro site atuando como desenvolvedor freelancer. O cliente queria um site para promover a empresa de energia solar, Solar System."
+                },
+                "show_project": "Ver projeto"
+            },
+            "more_projects": "Mais projetos no meu"
         }
     }
 }

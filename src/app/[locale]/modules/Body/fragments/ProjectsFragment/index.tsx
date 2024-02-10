@@ -1,11 +1,14 @@
+import { useTranslations } from "next-intl";
 import ProjectContainer from "./components/ProjectContainer";
-import projects from "./projects";
+import getProjects from "./projects";
 
 
 export default function ProjectsFragment() {
+    const t = useTranslations("Home.projects")
+    const projects = getProjects();
     return (
-        <div>
-            <h1 className="text-3xl mb-5"><span className="text-tertiary mr-4">#</span>Projetos</h1>
+        <div id="projects">
+            <h1 className="text-3xl mb-5"><span className="text-tertiary mr-4">#</span>{t('title')}</h1>
 
             {projects.map((project) => (
                 <ProjectContainer
@@ -17,6 +20,8 @@ export default function ProjectsFragment() {
                     link={project.link}
                 />
             ))}
+
+            <p>{t('more_projects')} <a href="https://github.com/pedrohhope" target="_blank" rel="noreferrer" className="text-tertiary hover:underline">github</a></p>
         </div>
     )
 }

@@ -24,10 +24,10 @@ export default function Header() {
                             <a
                                 href="mailto:pedro.contato.vitor@gmail.com"
                                 className="bg-quaternary text-white py-2 px-4 rounded-md hover:bg-tertiary transition duration-150">
-                                {t('apresentation.button')}
+                                {t('header.button')}
                             </a>
-                            <p>ou</p>
-                            <div className="flex flex-row">
+                            <p>{t('header.or')}</p>
+                            <div className="flex flex-row gap-3">
                                 <a href="https://www.linkedin.com/in/pedro-vitor-1ba839243/" target="__blank" rel="noopener noreferrer">
                                     <img src="./linkedin.png" alt="whatsapp-icon" className="w-8 h-8" />
                                 </a>
